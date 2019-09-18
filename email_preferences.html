@@ -1,0 +1,115 @@
+<html>
+
+<head>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<!-- <script
+		src="https://code.jquery.com/jquery-1.2.min.js"
+		integrity="sha256-EA4aFzphEyGP+0nhOhR3j6O5H/f82frFxSO67bDxt/s="
+		crossorigin="anonymous"></script> -->
+	</head>
+
+<body>
+	<div class="amf-form-logo"><a href="https://www.fairytaleshaircare.com" target="_blank"><img
+				src="http://email.fairytaleshaircare.com/files/amf_fairy_tales_hair_care/workspace_1/Forms/fthc_logo.png"
+				alt="Fairy Tales Hair Care" /></a></div>
+	<form action="https://email.fairytaleshaircare.com/k/Fairy-Tales-Hair-Care/email_preferences" method="post"
+		accept-charset="UTF-8">
+		<div class="amf-el amf-type-heading AdestraHeading1" id="amf-el-heading1_44">
+			<div class="heading" name="heading1_44" id="amf-heading-heading1_44">
+				<h3>Welcome to the Email Preferences Page</h3>
+			</div>
+		</div>
+		<div class="amf-el amf-type-subheading AdestraTagline1" id="amf-el-subheading1_45">
+			<div class="subheading" name="subheading1_45" id="amf-subheading-subheading1_45">
+				<h4>All the plants are going to die!!</h4>
+			</div>
+		</div>
+		<div class="amf-el amf-type-textbox AdestraLabel1"
+			id="amf-el-please_enter_the_email_address_you_would_like_to_change_preferences_for_46"><label
+				for="amf-input-please_enter_the_email_address_you_would_like_to_change_preferences_for_46">Please enter
+				the
+				email address you would like to change preferences for:</label>
+			<div class="amf-el-inner"><input type="text" class="text"
+					name="please_enter_the_email_address_you_would_like_to_change_preferences_for_46"
+					id="amf-input-please_enter_the_email_address_you_would_like_to_change_preferences_for_46" value=""
+					maxlength="255" onkeyup="if (this.length>255) this.value=this.value.substr(0, 255)"
+					onblur="this.value=this.value.substr(0, 255)"></div>
+		</div>
+		<div class="amf-el amf-type-htmlblock AdestraImage" id="amf-el-sparkle_head_53">
+			<div class="html-block" name="sparkle_head_53" id="amf-html-block-sparkle_head_53">
+				<p>
+					<!-- IMAGE LINK HERE --> <img
+						src="https://www.fairytaleshaircare.com/email_forms/images/sparkle_head.png"
+						alt="Fairy Tales Hair Care" title="Fairy Tales Hair Care" border="0" /></p>
+			</div>
+		</div>
+		<div class="amf-el amf-type-list AdestraCheckboxItem" id="amf-el-sales__special_offers_47">
+			<div class="amf-el-inner"><input type="checkbox" class="checkbox" name="sales__special_offers_47"
+					id="amf-input-sales__special_offers_47" value="194"><label
+					for="amf-input-sales__special_offers_47">Sales &amp; Special Offers</label></div>
+		</div>
+		<div class="amf-el amf-type-list AdestraCheckboxItem" id="amf-el-new_products_48">
+			<div class="amf-el-inner"><input type="checkbox" class="checkbox" name="new_products_48"
+					id="amf-input-new_products_48" value="195"><label for="amf-input-new_products_48">New
+					Products</label>
+			</div>
+		</div>
+		<div class="amf-el amf-type-list AdestraCheckboxItem" id="amf-el-blogs_from_the_founder_49">
+			<div class="amf-el-inner"><input type="checkbox" class="checkbox" name="blogs_from_the_founder_49"
+					id="amf-input-blogs_from_the_founder_49" value="196"><label
+					for="amf-input-blogs_from_the_founder_49">Blogs From the Founder</label></div>
+		</div>
+		<div class="amf-el amf-type-list AdestraCheckboxItem" id="amf-el-lice_alerts_50">
+			<div class="amf-el-inner"><input type="checkbox" class="checkbox" name="lice_alerts_50"
+					id="amf-input-lice_alerts_50" value="197"><label for="amf-input-lice_alerts_50">Lice Alerts</label>
+			</div>
+		</div>
+		<div class="amf-el amf-type-list AdestraCheckboxItem" id="amf-el-seasonal_promotions_51">
+			<div class="amf-el-inner"><input type="checkbox" class="checkbox" name="seasonal_promotions_51"
+					id="amf-input-seasonal_promotions_51" value="198"><label
+					for="amf-input-seasonal_promotions_51">Seasonal
+					Promotions</label></div>
+		</div>
+		<div class="amf-el amf-type-button AdestraSubmit" id="amf-el-submit_button_52"><input type="submit"
+				class="button" name="submit" id="submit" value="Send Your Choices"></div>
+		<script>
+			$(document).ready(function () {
+				$(".text").on("change paste keyup", function (e) {
+					console.log(e.target.value)
+				});
+
+			})
+		</script>
+		<script type="text/javascript" id="0.124679415437104">
+			(function () {
+				var script = document.getElementById('0.124679415437104');
+				var form = script.parentNode;
+				var inputs = form.getElementsByTagName('INPUT');
+				var submit_count = 0;
+
+				var enable_double_submit = false;
+
+				for (var i = 0; i < inputs.length; i++) {
+					var my_input = inputs[i];
+					if (my_input.type === 'submit') {
+						var container = my_input.parentNode;
+						if (container.className.match(/enable-double-submit/)) {
+							enable_double_submit = true;
+						}
+					}
+				}
+
+				form.addEventListener('submit', function (evt) {
+					if (submit_count >= 1 && !enable_double_submit) {
+						evt.preventDefault();
+					}
+					submit_count++;
+				});
+
+			})();
+		</script>
+	</form>
+</body>
+
+</html>
